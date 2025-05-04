@@ -25,16 +25,16 @@ runs:
     # Add name to file.
     - name: Add name to file.
       shell: bash
-      run: echo "${{ inputs.base-remote != '' && inputs.base-remote || inputs.remote  }}" >> file.txt
-    # Commit
-    - name: Commit
-      shell: bash
-      run: |
-        git config --global user.name "Muhammad Rendra"
-        git config --global user.email "mnrendra@users.noreply.github.com"
-        git add .
-        git commit -m "add name to file"
-    # Push
-    - name: Push
-      shell: bash
-      run: git push origin main --force
+      run: echo "${{ inputs.base-remote != '' && inputs.base-remote || inputs.remote  }}"
+    # # Commit
+    # - name: Commit
+    #   shell: bash
+    #   run: |
+    #     git config --global user.name "Muhammad Rendra"
+    #     git config --global user.email "mnrendra@users.noreply.github.com"
+    #     git add .
+    #     git commit -m "add name to file"
+    # # Push
+    # - name: Push
+    #   shell: bash
+    #   run: git push origin main --force
