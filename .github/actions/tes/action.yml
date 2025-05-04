@@ -37,4 +37,4 @@ runs:
     # Push
     - name: Push
       shell: bash
-      run: git push origin main
+      run: git push origin main --force
