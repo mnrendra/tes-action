@@ -13,3 +13,7 @@ jobs:
     permissions:
       contents: write
     uses: ./.github/workflows/abc.yml
+    steps:
+      # tai
+      - name: tai
+        run: echo tai ${{ secrets.ASU }} asuuu
