@@ -31,4 +31,3 @@ jobs:
         uses: ./.github/actions/tes
         with:
           remote: jembut
-          base-remote: bangsat

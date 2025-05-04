@@ -38,9 +38,3 @@ runs:
     - name: Push
       shell: bash
       run: git push origin main
-    # Export outputs
-    - name: Export outputs
-      shell: bash
-      run: |
-        echo "ref=${{ steps.checkout.outputs.ref }}" >> "$GITHUB_OUTPUT"
-        echo "commit=${{ steps.checkout.outputs.commit }}" >> "$GITHUB_OUTPUT"
