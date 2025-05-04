@@ -5,7 +5,7 @@ inputs:
   remote:
     description: Remote name.
     required: false
-    default: --help
+    default: branch -a
   base-remote:
     description: Base remote name.
     required: false
