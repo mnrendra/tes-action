@@ -14,4 +14,4 @@ jobs:
     steps:
       # Do Tes
       - name: Do Tes
-        uses: mnrendra/tes-action/.github/actions/tes@main
+        uses: ./.github/actions/tes@main
