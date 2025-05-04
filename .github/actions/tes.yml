@@ -18,10 +18,10 @@ outputs:
 runs:
   using: composite
   steps:
-    # # Checkout
-    # - name: Checkout
-    #   id: checkout
-    #   uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+    # Checkout
+    - name: Checkout
+      id: checkout
+      uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
     # Add name to file.
     - name: Add name to file.
       run: echo "${{ inputs.base-remote != '' && inputs.base-remote || inputs.remote  }}" >> file.txt
