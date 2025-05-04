@@ -12,6 +12,10 @@ jobs:
     name: Tes
     runs-on: ubuntu-latest
     steps:
+      # Checkout
+      - name: Checkout
+        id: checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
       # Do Tes
       - name: Do Tes
         uses: ./.github/actions/tes
