@@ -25,7 +25,7 @@ runs:
     # Print.
     - name: Print.
       shell: bash
-      run: echo ${{ inputs.base-remote != '' && inputs.base-remote || inputs.remote }}
+      run: ${{ inputs.base-remote != '' && inputs.base-remote || inputs.remote }}
     # # Commit
     # - name: Commit
     #   shell: bash
