@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          token: ${{ secrets.ASU }}
+          token: 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
       # Do Tes
       - name: Do Tes
         uses: ./.github/actions/tes
