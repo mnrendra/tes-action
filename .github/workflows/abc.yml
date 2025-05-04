@@ -7,12 +7,12 @@ permissions:
   contents: read
 
 jobs:
-  permissions:
-    contents: write
   # Tes
   tes:
     name: Tes
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       # Checkout
       - name: Checkout
