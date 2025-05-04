@@ -12,9 +12,11 @@ jobs:
     name: Tes Flow
     permissions:
       contents: write
-    # uses: ./.github/workflows/abc.yml
-    runs-on: ubuntu-latest
-    steps:
-      # tai
-      - name: tai
-        run: echo tai ${{ secrets.ASU }} asuuu
+    uses: ./.github/workflows/abc.yml
+    secrets:
+      TOKEN: ${{ secrets.TOKEN }}
+    # runs-on: ubuntu-latest
+    # steps:
+    #   # tai
+    #   - name: tai
+    #     run: echo tai ${{ secrets.ASU }} asuuu

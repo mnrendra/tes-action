@@ -2,6 +2,9 @@ name: Review
 
 on:
   workflow_call:
+    secrets:
+        TOKEN:
+          required: true
 
 permissions:
   contents: read
@@ -16,13 +19,13 @@ jobs:
     steps:
       # susu
       - name: susu
-        run: echo asu ${{ secrets.ASU }} babi
+        run: echo asu ${{ secrets.TOKEN }} babi
       # Checkout
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          token: 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
+          token: ${{ secrets.TOKEN }}
       # Do Tes
       - name: Do Tes
         uses: ./.github/actions/tes
