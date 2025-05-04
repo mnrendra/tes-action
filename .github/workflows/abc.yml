@@ -16,10 +16,9 @@ jobs:
     steps:
       # Checkout
       - name: Checkout
-        id: checkout
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          token: ${{ secrets.TOKEN }}
+          token: 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
       # Do Tes
       - name: Do Tes
         uses: ./.github/actions/tes
