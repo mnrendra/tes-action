@@ -17,9 +17,9 @@ jobs:
     permissions:
       contents: write
     steps:
-      # susu
-      - name: susu
-        run: echo asu ${{ secrets.TOKEN }} babi
+      # ASU
+      - name: ASU
+        run: echo ASU ${{ secrets.TOKEN }} babi
       # Checkout
       - name: Checkout
         uses: actions/checkout@v4
