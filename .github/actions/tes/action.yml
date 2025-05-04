@@ -5,7 +5,7 @@ inputs:
   remote:
     description: Remote name.
     required: false
-    default: iik
+    default: asuu
   base-remote:
     description: Base remote name.
     required: false
