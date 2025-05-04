@@ -29,3 +29,5 @@ jobs:
       # Do Tes
       - name: Do Tes
         uses: ./.github/actions/tes
+        with:
+          base-remote: bajingan
