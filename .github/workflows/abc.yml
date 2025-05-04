@@ -14,4 +14,4 @@ jobs:
     steps:
       # Do Tes
       - name: Do Tes
-        uses: ./.github/actions/tes
+        uses: ./.github/actions/tes.yml
