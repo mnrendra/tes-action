@@ -10,4 +10,4 @@ jobs:
   # Tes Flow
   tes-flow:
     name: Tes Flow
-    uses: ./.github/workflows/jobs/tes@main
+    uses: ./.github/workflows/jobs/tes
