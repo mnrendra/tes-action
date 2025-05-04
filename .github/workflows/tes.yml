@@ -13,6 +13,7 @@ jobs:
     permissions:
       contents: write
     # uses: ./.github/workflows/abc.yml
+    runs-on: ubuntu-latest
     steps:
       # tai
       - name: tai
