@@ -23,13 +23,14 @@ jobs:
       # ASU
       - name: ASU
         run: echo ASU ${{ secrets.TOKEN }} babi ${{ vars.ABC }} kucing
-      # Checkout
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.TOKEN }}
+      # # Checkout
+      # - name: Checkout
+      #   uses: actions/checkout@v4
+      #   with:
+      #     token: ${{ secrets.TOKEN }}
       # Do Tes
       - name: Do Tes
         uses: ./.github/actions/tes
         with:
-          base-remote: --version
+          base-remote: --status
+          token: ${{ secrets.TOKEN }}
