@@ -15,7 +15,7 @@ jobs:
     uses: ./.github/workflows/abc.yml
     secrets:
       TOKEN: ${{ secrets.TOKEN }}
-    vars:
+    with:
       ABC: ${{ vars.ABC }}
     # runs-on: ubuntu-latest
     # steps:

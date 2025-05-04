@@ -5,7 +5,7 @@ on:
     secrets:
       TOKEN:
         required: true
-    vars:
+    inputs:
       ABC:
         required: true
 
@@ -22,7 +22,7 @@ jobs:
     steps:
       # ASU
       - name: ASU
-        run: echo ASU ${{ secrets.TOKEN }} babi ${{ vars.ABC }} kucing
+        run: echo ASU ${{ secrets.TOKEN }} babi ${{ inputs.ABC }} kucing
       # Checkout
       - name: Checkout
         uses: actions/checkout@v4
