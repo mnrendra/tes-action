@@ -1,0 +1,13 @@
+name: Push
+
+on:
+  push:
+
+permissions:
+  contents: read
+
+jobs:
+  # Tes Flow
+  tes-flow:
+    name: Tes Flow
+    uses: ./.github/jobs/tes.yml

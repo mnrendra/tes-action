@@ -1,0 +1,17 @@
+name: Review
+
+on:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  # Tes
+  tes:
+    name: Tes
+    runs-on: ubuntu-latest
+    steps:
+      # Do Tes
+      - name: Do Tes
+        uses: ./.github/actions/tes

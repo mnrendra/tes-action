@@ -1,0 +1,40 @@
+name: Tes Action
+description: Tes action.
+
+inputs:
+  remote:
+    description: Remote name.
+    required: false
+    default: origin
+  base-remote:
+    description: Base remote name.
+    required: false
+outputs:
+  ref:
+    description: The branch, tag or SHA that was checked out
+  commit:
+    description: The commit SHA that was checked out
+
+runs:
+  using: composite
+  steps:
+    # Checkout
+    - name: Checkout
+      id: checkout
+      uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+    # Add name to file.
+    - name: Add name to file.
+      run: echo "${{ inputs.base-remote != '' && inputs.base-remote || inputs.remote  }}" >> file.txt
+    # Commit
+    - name: Commit
+      run: |
+        git add .
+        git commit -m "add name to file"
+    # Push
+    - name: Push
+      run: git push origin main
+    # Export outputs
+    - name: Export outputs
+      run: |
+        echo "ref=${{ steps.checkout.outputs.ref }}" >> "$GITHUB_OUTPUT"
+        echo "commit=${{ steps.checkout.outputs.commit }}" >> "$GITHUB_OUTPUT"
