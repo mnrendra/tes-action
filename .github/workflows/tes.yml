@@ -10,4 +10,6 @@ jobs:
   # Tes Flow
   tes-flow:
     name: Tes Flow
+    permissions:
+      contents: write
     uses: ./.github/workflows/abc.yml
