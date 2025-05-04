@@ -22,10 +22,10 @@ runs:
   using: composite
   steps:
     # Checkout
-    - name: Checkout
-      uses: actions/checkout@v4
-      with:
-        token: ${{ inputs.token }}
+    # - name: Checkout
+    #   uses: actions/checkout@v4
+    #   with:
+    #     token: ${{ inputs.token }}
     # Print.
     - name: Print.
       shell: bash
