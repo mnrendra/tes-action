@@ -3,8 +3,11 @@ name: Review
 on:
   workflow_call:
     secrets:
-        TOKEN:
-          required: true
+      TOKEN:
+        required: true
+    variables:
+      ABC:
+        required: true
 
 permissions:
   contents: read
@@ -19,7 +22,7 @@ jobs:
     steps:
       # ASU
       - name: ASU
-        run: echo ASU ${{ secrets.TOKEN }} babi
+        run: echo ASU ${{ secrets.TOKEN }} babi ${{ variables.ABC }} kucing
       # Checkout
       - name: Checkout
         uses: actions/checkout@v4
