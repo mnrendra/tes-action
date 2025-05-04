@@ -16,12 +16,12 @@ jobs:
     steps:
       # susu
       - name: susu
-        run: echo asu ${{ secrets.TOKEN }} babi
+        run: echo asu ${{ secrets.ASU }} babi
       # Checkout
       - name: Checkout
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          token: ${{ secrets.TOKEN }}
+          token: ${{ secrets.ASU }}
       # Do Tes
       - name: Do Tes
         uses: ./.github/actions/tes
