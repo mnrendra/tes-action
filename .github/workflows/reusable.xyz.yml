@@ -20,12 +20,12 @@ jobs:
     secrets:
       TOKEN: ${{ secrets.TOKEN }}
   # Def
-  def:
-    name: Def
-    needs: [abc]
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    uses: ./.github/workflows/reusable.def.yml
-    secrets:
-      TOKEN: ${{ secrets.TOKEN }}
+  # def:
+  #   name: Def
+  #   needs: [abc]
+  #   runs-on: ubuntu-latest
+  #   permissions:
+  #     contents: write
+  #   uses: ./.github/workflows/reusable.def.yml
+  #   secrets:
+  #     TOKEN: ${{ secrets.TOKEN }}
