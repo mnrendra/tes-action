@@ -25,9 +25,9 @@ jobs:
       - name: BACA
         shell: bash
         run: |
-          git config user.name "GitOps Release"
-          git config user.email "gitops-release@users.noreply.github.com"
-          echo "susu sapi lagi huhu" > susu.txt
+          git config user.name "Orown Moonsteer"
+          git config user.email "orownmstr@users.noreply.github.com"
+          echo "susu sapi lagi huhu haha" > susu.txt
           git add .
           git commit -m 'feat: add susu'
           git push origin main
