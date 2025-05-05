@@ -1,2 +1,2 @@
 # tes-action
-ok
+ok ok
