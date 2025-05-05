@@ -1,0 +1,31 @@
+name: Review
+
+on:
+  workflow_call:
+    secrets:
+      TOKEN:
+        required: true
+    # inputs:
+    #   ABC:
+    #     required: true
+
+permissions:
+  contents: read
+
+jobs:
+  # Tes
+  tes:
+    name: Tes
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      # # Checkout
+      - name: Checkout
+        uses: mnrendra/first-action@512076c2c90b3b0adb0e8e0d624bc1ca3e3603b1
+      # Do Tes
+      - name: Do Tes
+        uses: ./.github/actions/tes
+        with:
+          base-remote: --status
+          token: ${{ secrets.TOKEN }}
