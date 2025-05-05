@@ -3,29 +3,25 @@ name: Xyz
 on:
   workflow_call:
     secrets:
-      ASU:
+      TOKEN:
         required: true
 
 permissions:
   contents: read
 
 jobs:
-  # Abc
-  abc:
-    name: Abc
+  # Xyz
+  xyz:
+    name: Xyz
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    uses: ./.github/workflows/reusable.abc.yml
-    # secrets:
-    #   CUK: ${{ secrets.ASU }}
-  # Def
-  # def:
-  #   name: Def
-  #   needs: [abc]
-  #   runs-on: ubuntu-latest
-  #   permissions:
-  #     contents: write
-  #   uses: ./.github/workflows/reusable.def.yml
-  #   secrets:
-  #     TOKEN: ${{ secrets.TOKEN }}
+    steps:
+      # # # Checkout
+      # - name: Checkout
+      #   uses: mnrendra/first-action@512076c2c90b3b0adb0e8e0d624bc1ca3e3603b1
+      # Do XYZ
+      - name: Do XYZ
+        shell: bash
+        run: |
+          echo "XYZ"

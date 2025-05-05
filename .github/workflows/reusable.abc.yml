@@ -16,12 +16,22 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    steps:
-      # # # Checkout
-      # - name: Checkout
-      #   uses: mnrendra/first-action@512076c2c90b3b0adb0e8e0d624bc1ca3e3603b1
-      # Do ABC
-      - name: Do ABC
-        shell: bash
-        run: |
-          echo "ABC"
+    
+    # Xyx
+    xyz:
+      name: Xyx
+      permissions:
+        contents: write
+      uses: ./.github/workflows/reusable.xyz.yml
+      secrets:
+        TOKEN: ${{ secrets.TOKEN }}
+
+    # steps:
+    #   # # # Checkout
+    #   # - name: Checkout
+    #   #   uses: mnrendra/first-action@512076c2c90b3b0adb0e8e0d624bc1ca3e3603b1
+    #   # Do ABC
+    #   - name: Do ABC
+    #     shell: bash
+    #     run: |
+    #       echo "ABC"
