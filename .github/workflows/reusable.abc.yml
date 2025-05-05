@@ -3,7 +3,7 @@ name: Abc
 on:
   workflow_call:
     secrets:
-      TOKEN:
+      CUK:
         required: true
 
 permissions:

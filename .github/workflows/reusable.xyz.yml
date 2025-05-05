@@ -3,7 +3,7 @@ name: Xyz
 on:
   workflow_call:
     secrets:
-      TOKEN:
+      ASU:
         required: true
 
 permissions:
@@ -18,7 +18,7 @@ jobs:
       contents: write
     uses: ./.github/workflows/reusable.abc.yml
     secrets:
-      TOKEN: ${{ secrets.TOKEN }}
+      CUK: ${{ secrets.ASU }}
   # Def
   # def:
   #   name: Def
