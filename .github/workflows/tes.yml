@@ -7,12 +7,18 @@ permissions:
   contents: read
 
 jobs:
-  # Tes Flow
-  tes-flow:
-    name: Tes Flow
+  # Abc
+  abc:
+    name: Abc
     permissions:
       contents: write
-    uses: ./.github/workflows/reusable.xyz.yml
+    uses: ./.github/workflows/reusable.abc.yml
+  # Def
+  def:
+    name: Def
+    permissions:
+      contents: write
+    uses: ./.github/workflows/reusable.def.yml
     # secrets:
     #   ASU: ${{ secrets.TOKEN }}
     # with:
