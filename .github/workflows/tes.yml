@@ -13,14 +13,16 @@ jobs:
     permissions:
       contents: write
     uses: ./.github/workflows/reusable.abc.yml
+    secrets:
+      TOKEN: ${{ secrets.TOKEN }}
   # Def
   def:
     name: Def
     permissions:
       contents: write
     uses: ./.github/workflows/reusable.def.yml
-    # secrets:
-    #   ASU: ${{ secrets.TOKEN }}
+    secrets:
+      TOKEN: ${{ secrets.TOKEN }}
     # with:
     #   ABC: ${{ vars.ABC }}
     # runs-on: ubuntu-latest

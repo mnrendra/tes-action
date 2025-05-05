@@ -2,9 +2,9 @@ name: Abc
 
 on:
   workflow_call:
-    # secrets:
-    #   CUK:
-    #     required: true
+    secrets:
+      TOKEN:
+        required: true
 
 permissions:
   contents: read
