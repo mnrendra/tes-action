@@ -26,7 +26,7 @@ jobs:
         run: |
           git config user.name "GitOps Release"
           git config user.email "gitops-release@users.noreply.github.com"
-          echo "susu sapi" > susu.txt
+          echo "susu sapi lagi" > susu.txt
           git add .
           git commit -m 'feat: add susu'
           git push origin main
