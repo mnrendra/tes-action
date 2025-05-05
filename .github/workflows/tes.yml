@@ -14,7 +14,7 @@ jobs:
     needs: [def]
     permissions:
       contents: write
-    uses: ./.github/workflows/reusable.abc.yml
+    uses: ./.github/workflows/reusable.abc
     secrets:
       TOKEN: ${{ secrets.TOKEN }}
   # Def
@@ -22,7 +22,7 @@ jobs:
     name: Def
     permissions:
       contents: write
-    uses: ./.github/workflows/reusable.def.yml
+    uses: ./.github/workflows/reusable.def
     secrets:
       TOKEN: ${{ secrets.TOKEN }}
     # with:
