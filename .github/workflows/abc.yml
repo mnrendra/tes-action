@@ -22,7 +22,7 @@ jobs:
     steps:
       # # Checkout
       - name: Checkout
-        uses: mnrendra/first-action@v093cb703244d419404432749259a9817b2e4c17a
+        uses: mnrendra/first-action@093cb703244d419404432749259a9817b2e4c17a
         with:
           token: ${{ secrets.TOKEN }}
       # Do Tesi
