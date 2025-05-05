@@ -18,8 +18,8 @@ jobs:
       contents: write
     
     uses: ./.github/workflows/reusable.xyz.yml
-    secrets:
-      TOKEN: ${{ secrets.TOKEN }}
+    # secrets:
+    #   TOKEN: ${{ secrets.TOKEN }}
 
     # steps:
     #   # # # Checkout

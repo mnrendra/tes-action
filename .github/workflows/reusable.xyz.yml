@@ -2,9 +2,9 @@ name: Xyz
 
 on:
   workflow_call:
-    secrets:
-      TOKEN:
-        required: true
+    # secrets:
+    #   TOKEN:
+    #     required: true
 
 permissions:
   contents: read
