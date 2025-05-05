@@ -1,4 +1,4 @@
-name: Abc
+name: Def
 
 on:
   workflow_call:
@@ -10,9 +10,9 @@ permissions:
   contents: read
 
 jobs:
-  # Abc
-  abc:
-    name: Abc
+  # Def
+  def:
+    name: Def
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -20,8 +20,8 @@ jobs:
       # # # Checkout
       # - name: Checkout
       #   uses: mnrendra/first-action@512076c2c90b3b0adb0e8e0d624bc1ca3e3603b1
-      # Do ABC
-      - name: Do ABC
+      # Do DEF
+      - name: Do DEF
         shell: bash
         run: |
-          echo "ABC"
+          echo "DEF"
