@@ -13,8 +13,8 @@ jobs:
     permissions:
       contents: write
     uses: ./.github/workflows/reusable.xyz.yml
-    secrets:
-      ASU: ${{ secrets.TOKEN }}
+    # secrets:
+    #   ASU: ${{ secrets.TOKEN }}
     # with:
     #   ABC: ${{ vars.ABC }}
     # runs-on: ubuntu-latest

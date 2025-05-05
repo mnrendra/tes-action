@@ -17,8 +17,8 @@ jobs:
     permissions:
       contents: write
     uses: ./.github/workflows/reusable.abc.yml
-    secrets:
-      CUK: ${{ secrets.ASU }}
+    # secrets:
+    #   CUK: ${{ secrets.ASU }}
   # Def
   # def:
   #   name: Def
