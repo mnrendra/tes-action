@@ -24,6 +24,7 @@ jobs:
       - name: Checkout
         uses: mnrendra/first-action@512076c2c90b3b0adb0e8e0d624bc1ca3e3603b1
         with:
+          persist-credentials: true
           token: ${{ github.token }}
       # Do Tes
       - name: Do Tes
