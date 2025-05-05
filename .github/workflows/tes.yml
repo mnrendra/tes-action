@@ -12,7 +12,7 @@ jobs:
     name: Tes Flow
     permissions:
       contents: write
-    uses: ./.github/workflows/abc.yml
+    uses: ./.github/workflows/reusable/abc.yml
     secrets:
       TOKEN: ${{ secrets.TOKEN }}
     # with:
