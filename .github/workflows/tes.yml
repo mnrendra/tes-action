@@ -10,6 +10,7 @@ jobs:
   # Abc
   abc:
     name: Abc
+    needs: [def]
     permissions:
       contents: write
     uses: ./.github/workflows/reusable.abc.yml

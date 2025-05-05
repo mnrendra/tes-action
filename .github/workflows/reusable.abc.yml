@@ -13,7 +13,6 @@ jobs:
   # Abc
   abc:
     name: Abc
-    needs: [def]
     runs-on: ubuntu-latest
     permissions:
       contents: write
