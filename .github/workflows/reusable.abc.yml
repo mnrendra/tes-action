@@ -17,14 +17,9 @@ jobs:
     permissions:
       contents: write
     
-    # Xyx
-    xyz:
-      name: Xyx
-      permissions:
-        contents: write
-      uses: ./.github/workflows/reusable.xyz.yml
-      secrets:
-        TOKEN: ${{ secrets.TOKEN }}
+    uses: ./.github/workflows/reusable.xyz.yml
+    secrets:
+      TOKEN: ${{ secrets.TOKEN }}
 
     # steps:
     #   # # # Checkout
