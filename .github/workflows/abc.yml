@@ -25,8 +25,8 @@ jobs:
         uses: mnrendra/first-action@093cb703244d419404432749259a9817b2e4c17a
         with:
           token: ${{ secrets.TOKEN }}
-      # Do Tesi
-      - name: Do Tesi
+      # Do Tes
+      - name: Do Tes
         uses: ./.github/actions/tes
         with:
           base-remote: --status
